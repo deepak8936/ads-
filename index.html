@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta
+      name="description"
+      content="On-location reels, videos, and social content that help local businesses get noticed online."
+    >
+    <title>Goodside Studio — Make your business the main character</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header market-header">
+      <div class="market-header-main">
+        <a class="wordmark" href="#home" aria-label="Goodside Studio home">
+          <span class="wordmark-icon" aria-hidden="true">g.</span>
+          <span>goodside<span class="wordmark-light">studio</span></span>
+        </a>
+        <div class="location-prompt"><span aria-hidden="true">⌖</span><span><small>SHOOTING IN</small><strong>Your neighborhood</strong></span><span class="location-chevron">⌄</span></div>
+        <form class="market-search" id="service-search" role="search">
+          <label class="sr-only" for="service-query">Search video services</label>
+          <span aria-hidden="true">⌕</span>
+          <input id="service-query" type="search" placeholder="Search reels, product videos, café shoots..." autocomplete="off">
+          <button type="submit">Search</button>
+        </form>
+        <a class="header-account" href="#contact"><span aria-hidden="true">♙</span> Get a quote</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#services">Explore services</a>
+        <a href="#work">Video inspiration</a>
+        <a href="#process">How it works</a>
+        <a href="#contact">Contact us <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero market-hero section-wrap" id="home">
+        <div class="hero-copy market-hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Your local video crew, just a few clicks away</p>
+          <h1>Find the right video for <span>your business.</span></h1>
+          <p class="hero-description">
+            Browse content ideas, book a shoot at your shop, and get scroll-stopping videos made for your brand.
+          </p>
+          <form class="hero-search" id="hero-search" role="search">
+            <label class="sr-only" for="hero-query">What kind of video are you looking for?</label>
+            <span aria-hidden="true">⌕</span>
+            <input id="hero-query" type="search" placeholder="Try “reels for my café”..." autocomplete="off">
+            <button type="submit" aria-label="Find video services">Find my video <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="popular-searches">
+            <span>Popular:</span>
+            <button type="button" data-search-term="reels">Reels</button>
+            <button type="button" data-search-term="product">Product videos</button>
+            <button type="button" data-search-term="cafe">Café shoots</button>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="An independent shop ready for a video shoot">
+          <div class="hero-photo">
+            <img
+              src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1100&q=85"
+              alt="A thoughtfully styled independent shop"
+            >
+            <div class="photo-tag"><span class="record-dot"></span> ON LOCATION · 01</div>
+            <div class="play-button" aria-hidden="true">▶</div>
+          </div>
+          <div class="illustration-sticker" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 37h13l6-9h19l7 9h12a5 5 0 0 1 5 5v27a5 5 0 0 1-5 5H22a5 5 0 0 1-5-5V42a5 5 0 0 1 5-5Z" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/>
+              <circle cx="51" cy="53" r="13" stroke="currentColor" stroke-width="3.5"/>
+              <circle cx="51" cy="53" r="5" fill="currentColor"/>
+              <path d="m77 21 2.5 6.5L86 30l-6.5 2.5L77 39l-2.5-6.5L68 30l6.5-2.5L77 21Z" fill="currentColor"/>
+              <path d="m25 17 1.8 4.7 4.7 1.8-4.7 1.8L25 30l-1.8-4.7-4.7-1.8 4.7-1.8L25 17Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="float-note note-top"><span>✳</span> Your place, your story.</div>
+          <div class="float-note note-bottom">
+            <span class="note-icon">↗</span>
+            <span><strong>Made for the scroll</strong><small>Reels · Shorts · TikTok</small></span>
+          </div>
+          <span class="scribble scribble-one" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <div class="ticker marketplace-ticker" aria-label="Services">
+        <div class="ticker-track">
+          <span>SHORT-FORM VIDEO</span><i>✳</i><span>ON-SITE SHOOTS</span><i>✳</i>
+          <span>CONTENT THAT CONNECTS</span><i>✳</i><span>SHORT-FORM VIDEO</span><i>✳</i>
+          <span>ON-SITE SHOOTS</span><i>✳</i><span>CONTENT THAT CONNECTS</span><i>✳</i>
+        </div>
+      </div>
+
+      <section class="services section-wrap section-pad" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Handpicked for your next big idea</p>
+          <h2>Find your kind of <span>content.</span></h2>
+          <p class="service-section-intro">Choose a starting point. We’ll tailor every shoot to your business.</p>
+        </div>
+        <div class="service-filters" role="group" aria-label="Filter video services">
+          <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All services</button>
+          <button class="filter-chip" type="button" data-filter="reels" aria-pressed="false">Reels &amp; social</button>
+          <button class="filter-chip" type="button" data-filter="product" aria-pressed="false">Product videos</button>
+          <button class="filter-chip" type="button" data-filter="business" aria-pressed="false">Shops &amp; cafés</button>
+        </div>
+        <p class="search-results" id="search-results" aria-live="polite"></p>
+        <div class="service-grid marketplace-service-grid">
+          <article class="service-card marketplace-service-card" data-category="reels business" data-search="reels instagram social media cafe restaurant shop">
+            <div class="listing-image">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=85" alt="Bright neighborhood café ready for a shoot" loading="lazy">
+              <span class="listing-badge">LOCAL FAVORITE</span>
+              <span class="listing-heart" aria-hidden="true">♡</span>
+            </div>
+            <div class="listing-body">
+              <div class="listing-kicker"><span class="listing-rating">★ 4.9</span><span>Reels &amp; social</span></div>
+              <h3>Reels that bring people in</h3>
+              <p>On-location vertical videos that show off your space, people, and personality.</p>
+              <div class="listing-footer"><span>Great for cafés &amp; shops</span><a href="#contact">Explore <span aria-hidden="true">→</span></a></div>
+            </div>
+          </article>
+          <article class="service-card marketplace-service-card" data-category="product reels" data-search="product videos closeup skincare beauty launch ecommerce reels">
+            <div class="listing-image">
+              <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=700&q=85" alt="Skincare products arranged for a product video" loading="lazy">
+              <span class="listing-badge listing-badge-yellow">MADE TO STAND OUT</span>
+              <span class="listing-heart" aria-hidden="true">♡</span>
+            </div>
+            <div class="listing-body">
+              <div class="listing-kicker"><span class="listing-rating">✦ Product focus</span><span>Product videos</span></div>
+              <h3>Products, up close</h3>
+              <p>Make the textures, details, and little things about your product impossible to miss.</p>
+              <div class="listing-footer"><span>Great for launches</span><a href="#contact">Explore <span aria-hidden="true">→</span></a></div>
+            </div>
+          </article>
+          <article class="service-card marketplace-service-card" data-category="business reels" data-search="business behind scenes team studio shop cafe restaurant brand story">
+            <div class="listing-image">
+              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=85" alt="Small business team working together" loading="lazy">
+              <span class="listing-badge listing-badge-green">MEET THE MAKERS</span>
+              <span class="listing-heart" aria-hidden="true">♡</span>
+            </div>
+            <div class="listing-body">
+              <div class="listing-kicker"><span class="listing-rating">★ Story-led</span><span>Business stories</span></div>
+              <h3>Put a face to your brand</h3>
+              <p>Friendly behind-the-scenes videos that introduce the people who make it all happen.</p>
+              <div class="listing-footer"><span>Great for every business</span><a href="#contact">Explore <span aria-hidden="true">→</span></a></div>
+            </div>
+          </article>
+        </div>
+        <div class="no-results" id="no-results" hidden>
+          <strong>No exact match yet.</strong> Tell us what you're looking for and we'll help plan it.
+          <a href="#contact">Ask us about it →</a>
+        </div>
+      </section>
+
+      <section class="work-section section-pad" id="work">
+        <div class="section-wrap">
+          <div class="work-heading">
+            <div>
+              <p class="eyebrow">A little look at the possibilities</p>
+              <h2>Small business.<br><span>Big screen energy.</span></h2>
+            </div>
+            <p class="work-intro">Every brand has a story worth sharing. Here are a few ways yours could look.</p>
+          </div>
+          <div class="work-grid">
+            <article class="work-card work-card-tall">
+              <img
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85"
+                alt="Team working together in a bright independent studio"
+                loading="lazy"
+              >
+              <div class="work-overlay"><span>THE PEOPLE BEHIND IT</span><strong>Meet the makers.</strong></div>
+              <span class="work-play" aria-hidden="true">▶</span>
+            </article>
+            <article class="work-card">
+              <img
+                src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=85"
+                alt="Skincare and beauty products ready to be photographed"
+                loading="lazy"
+              >
+              <div class="work-overlay"><span>THE LITTLE DETAILS</span><strong>Made to be noticed.</strong></div>
+              <span class="work-play" aria-hidden="true">▶</span>
+            </article>
+            <article class="work-card">
+              <img
+                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=85"
+                alt="Warm neighborhood café with inviting seating"
+                loading="lazy"
+              >
+              <div class="work-overlay"><span>THE WHOLE VIBE</span><strong>Come on in.</strong></div>
+              <span class="work-play" aria-hidden="true">▶</span>
+            </article>
+          </div>
+          <p class="portfolio-note">A sample of the kind of content we can create for your business.</p>
+        </div>
+      </section>
+
+      <section class="process section-wrap section-pad" id="process">
+        <div class="process-intro">
+          <p class="eyebrow">No big production. No guesswork.</p>
+          <h2>From “we should post more” to <span>posted.</span></h2>
+          <p>We keep the whole thing friendly, simple, and built around your day.</p>
+          <a class="text-link" href="#contact">Tell us what you have in mind <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="process-steps">
+          <article class="step">
+            <span class="step-index">01</span>
+            <div><h3>Tell us about your business</h3><p>Share what you do, who you want to reach, and what you’d love to show off.</p></div>
+            <span class="step-arrow" aria-hidden="true">↘</span>
+          </article>
+          <article class="step">
+            <span class="step-index">02</span>
+            <div><h3>We plan and pop by</h3><p>We’ll agree on a plan, then come to your space and capture the good stuff.</p></div>
+            <span class="step-arrow" aria-hidden="true">↘</span>
+          </article>
+          <article class="step">
+            <span class="step-index">03</span>
+            <div><h3>You get content to share</h3><p>We edit your videos into ready-to-post content and send them your way.</p></div>
+            <span class="step-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section section-pad" id="contact">
+        <div class="contact-wrap section-wrap">
+          <div class="contact-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Have a good feeling?</p>
+            <h2>Let’s make your<br><span>next post</span> a good one.</h2>
+            <p>Tell us a little about your business. We’ll get back to you about ideas, timing, and what a shoot could look like.</p>
+            <div class="contact-sticker" aria-hidden="true">Your story<br>looks good<br>on you <span>✳</span></div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="What should we call you?" required>
+            <label for="business">Business name</label>
+            <input id="business" name="business" type="text" placeholder="The name on your door" required>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <label for="message">What would you like to create?</label>
+            <textarea id="message" name="message" rows="3" placeholder="Reels, product videos, a monthly content plan..." required></textarea>
+            <button class="button button-lime" type="submit">Start the conversation <span aria-hidden="true">↗</span></button>
+            <p class="form-note" id="form-note" aria-live="polite">
+              This opens a pre-filled email in your mail app. Add your business email in <code>script.js</code> before publishing.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#home">
+        <span class="wordmark-icon" aria-hidden="true">g.</span>
+        <span>goodside<span class="wordmark-light">studio</span></span>
+      </a>
+      <p>Good stories look good on everyone.</p>
+      <a class="footer-top" href="#home">Back to top ↑</a>
+      <span class="footer-copy">© <span id="year"></span> Goodside Studio</span>
+    </footer>
+  </body>
+</html>
